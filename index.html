@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Library ASBA — a browser-based library management system for circulation, cataloguing and reporting.">
+<meta name="color-scheme" content="light">
+<title>Sign in · Library ASBA</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%232f3ba2'/%3E%3Cpath d='M16 10.5c-1.7-1.4-4.2-2-7.2-2v11.6c3 0 5.5.6 7.2 2 1.7-1.4 4.2-2 7.2-2V8.5c-3 0-5.5.6-7.2 2z' fill='none' stroke='%23fff' stroke-width='1.8' stroke-linejoin='round'/%3E%3Cpath d='M16 10.5v11.6' stroke='%23fff' stroke-width='1.8'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth">
+
+<div class="auth__layout">
+
+  <section class="auth__intro">
+    <a class="brand brand--light" href="index.html">
+      <span class="brand__mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 6.4C10.2 4.9 7.6 4.3 4.5 4.3v12.4c3.1 0 5.7.6 7.5 2.1 1.8-1.5 4.4-2.1 7.5-2.1V4.3c-3.1 0-5.7.6-7.5 2.1z"/>
+          <path d="M12 6.4v12.4"/>
+        </svg>
+      </span>
+      <span class="brand__name">Library ASBA</span>
+    </a>
+
+    <div class="auth__copy">
+      <p class="eyebrow">Library Management System</p>
+      <h1>Every loan, copy and fine in one place.</h1>
+      <p class="auth__lede">
+        Library ASBA handles the desk work — issuing and returning books, tracking
+        overdue fines and keeping the catalogue accurate — without a server to maintain.
+      </p>
+    </div>
+
+    <ul class="auth__features">
+      <li>
+        <span class="auth__feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h12.5"/><path d="M12.5 7 17.5 12l-5 5"/><path d="M20 4.5v15"/></svg>
+        </span>
+        <span><strong>Circulation</strong> Issue, renew and return with automatic due dates and fines.</span>
+      </li>
+      <li>
+        <span class="auth__feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4.2 5.2A1.4 1.4 0 0 1 5.6 3.8h4.2a2 2 0 0 1 2 2v13a1.8 1.8 0 0 0-1.8-1.4H4.2z"/><path d="M19.8 5.2a1.4 1.4 0 0 0-1.4-1.4h-4.2a2 2 0 0 0-2 2v13a1.8 1.8 0 0 1 1.8-1.4h5.8z"/></svg>
+        </span>
+        <span><strong>Catalogue</strong> Titles, individual copies, shelf locations and reservations.</span>
+      </li>
+      <li>
+        <span class="auth__feature-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16"/><path d="M7 20V12.5"/><path d="M12 20V5"/><path d="M17 20v-9.5"/></svg>
+        </span>
+        <span><strong>Reporting</strong> Overdue lists, borrowing trends and outstanding balances.</span>
+      </li>
+    </ul>
+
+    <p class="auth__footnote">Academic project · HTML, CSS and vanilla JavaScript · Data stored in this browser</p>
+  </section>
+
+  <section class="auth__panel">
+    <div class="auth__card">
+
+      <a class="brand brand--compact" href="index.html">
+        <span class="brand__mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 6.4C10.2 4.9 7.6 4.3 4.5 4.3v12.4c3.1 0 5.7.6 7.5 2.1 1.8-1.5 4.4-2.1 7.5-2.1V4.3c-3.1 0-5.7.6-7.5 2.1z"/>
+            <path d="M12 6.4v12.4"/>
+          </svg>
+        </span>
+        <span class="brand__name">Library ASBA</span>
+      </a>
+
+      <div class="auth__heading">
+        <h2>Sign in</h2>
+        <p>Use the account issued to you by the library.</p>
+      </div>
+
+      <form id="loginForm" novalidate aria-busy="true">
+        <div class="field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="username"
+                 placeholder="you@example.com" required>
+        </div>
+
+        <div class="field">
+          <label for="password">Password</label>
+          <div class="field__password">
+            <input id="password" name="password" type="password" autocomplete="current-password"
+                   placeholder="Your password" required>
+            <button type="button" id="togglePassword" class="field__reveal" aria-label="Show password">Show</button>
+          </div>
+        </div>
+
+        <button type="submit" id="loginSubmit" class="btn btn--primary btn--block">Sign in</button>
+      </form>
+
+      <div class="auth__demo">
+        <p class="auth__demo-title">Demonstration accounts</p>
+        <button type="button" class="auth__demo-button"
+                data-demo-email="admin@library.com" data-demo-password="admin123">
+          <span>Administrator</span><span class="cell-mono">admin@library.com</span>
+        </button>
+        <button type="button" class="auth__demo-button"
+                data-demo-email="librarian@library.com" data-demo-password="lib123">
+          <span>Librarian</span><span class="cell-mono">librarian@library.com</span>
+        </button>
+        <button type="button" class="auth__demo-button"
+                data-demo-email="member@library.com" data-demo-password="member123">
+          <span>Student</span><span class="cell-mono">member@library.com</span>
+        </button>
+      </div>
+
+      <p class="auth__note">
+        Records are saved in this browser only. Sessions expire after 8 hours.
+        <button type="button" class="auth__link" data-action="reset-data">Reset stored data</button>
+      </p>
+    </div>
+  </section>
+
+</div>
+
+<dialog id="confirmModal" class="dialog dialog--confirm" aria-labelledby="confirmModalTitle">
+  <div class="dialog__body">
+    <h2 id="confirmModalTitle"></h2>
+    <p id="confirmModalMessage" class="dialog__message"></p>
+    <div class="form-actions">
+      <button type="button" class="btn btn--ghost" id="confirmModalCancel" data-action="close-confirm">Cancel</button>
+      <button type="button" class="btn btn--primary" id="confirmModalAccept">Confirm</button>
+    </div>
+  </div>
+</dialog>
+
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+<script src="js/core.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/login.js"></script>
+</body>
+</html>
