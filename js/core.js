@@ -305,7 +305,7 @@
   ];
 
   var SEED_ACCOUNTS = [
-    { kind: 'user', name: 'Asha Menon', email: 'admin@library.com', role: 'admin', designation: 'System Administrator', department: 'Library Administration', password: 'admin123' },
+    { kind: 'user', name: 'Asha', email: 'admin@library.com', role: 'admin', designation: 'System Administrator', department: 'Library Administration', password: 'admin123' },
     { kind: 'user', name: 'Rahul Iyer', email: 'librarian@library.com', role: 'librarian', designation: 'Senior Librarian', department: 'Circulation Desk', password: 'lib123' },
     { kind: 'member', name: 'Neha Sharma', email: 'member@library.com', department: 'Computer Science', course: 'B.Tech Computer Science', semester: '5th Semester', password: 'member123' },
     { kind: 'member', name: 'Imran Qureshi', email: 'imran@library.com', department: 'Electronics', course: 'B.Tech Electronics', semester: '3rd Semester', password: 'member123' }
